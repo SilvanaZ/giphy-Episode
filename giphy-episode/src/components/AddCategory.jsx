@@ -1,18 +1,25 @@
 import { useState } from 'react';
 
-export const AddCategory = () => {
+export const AddCategory = ({ setCategories }) => {
 
     const [ inputValue, setInputValue ] = useState('One piece');
-    const onInputChange = (event) => {
-        console.log(event.target.value);
-        setInputValue(event.target.value);
+    const onInputChange = ({ target }) => {
+        setInputValue(target.value);
+    }
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        console.log(inputValue);
+        setCategories({ inputValue });
     }
 
     return (
-        <input type="text"
-            placeholder="Buscar Gifs..."
-            value={inputValue}
-            onChange={(event) => onInputChange(event)}
-        />
+        <form onSubmit={(event) => onSubmit(event)}>
+            <input type="text"
+                placeholder="Buscar Gifs..."
+                value={inputValue}
+                onChange={onInputChange}
+            />
+        </form>
     )
 }

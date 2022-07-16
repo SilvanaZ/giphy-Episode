@@ -17,10 +17,10 @@ export const GiphyEpisodeApp = () => {
             <h1> GiphyEpisodeApp</h1>
 
             {/* Input */}
-            <AddCategory />
+            <AddCategory onAddCategory={setCategories} />
 
             {/* Listado de Gif */}
-            <button onClick={onAddCategory}>Añadir</button>
+            {/* <button onClick={onAddCategory}>Añadir</button> */}
             <ol>
                 {categories.map(category => {
                     return <li key={category}>{category}</li>
