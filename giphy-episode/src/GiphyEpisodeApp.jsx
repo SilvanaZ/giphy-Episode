@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 
 export const GiphyEpisodeApp = () => {
 
-    const [categories, setCategories] = useState(['One Piece', 'One Punchman', 'Nanatzu no Taizai', 'Kimetsu no Yaiba']);
+    const [ categories, setCategories ] = useState([ 'One Piece', 'One Punchman', 'Nanatzu no Taizai', 'Kimetsu no Yaiba' ]);
 
     const onAddCategory = () => {
         //categories.push('Inuyasha')
-        setCategories([...categories, 'Inuyasha']);
+        setCategories([ 'Inuyasha', ...categories, ]);
         //setCategories(cat => [...cat, 'Inuyasha']);
     }
 
@@ -16,9 +17,10 @@ export const GiphyEpisodeApp = () => {
             <h1> GiphyEpisodeApp</h1>
 
             {/* Input */}
+            <AddCategory />
 
             {/* Listado de Gif */}
-            <button onClick={onAddCategory}>Agregar Categoria</button>
+            <button onClick={onAddCategory}>Añadir</button>
             <ol>
                 {categories.map(category => {
                     return <li key={category}>{category}</li>
@@ -26,6 +28,8 @@ export const GiphyEpisodeApp = () => {
             </ol>
 
             {/* Gif Item */}
+
+
         </>
     )
 }
