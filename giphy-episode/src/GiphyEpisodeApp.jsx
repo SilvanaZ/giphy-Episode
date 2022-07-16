@@ -5,7 +5,9 @@ export const GiphyEpisodeApp = () => {
     const [categories, setCategories] = useState(['One Piece', 'One Punchman', 'Nanatzu no Taizai', 'Kimetsu no Yaiba']);
 
     const onAddCategory = () => {
-
+        //categories.push('Inuyasha')
+        setCategories([...categories, 'Inuyasha']);
+        //setCategories(cat => [...cat, 'Inuyasha']);
     }
 
     return (
@@ -16,7 +18,7 @@ export const GiphyEpisodeApp = () => {
             {/* Input */}
 
             {/* Listado de Gif */}
-            <button>Agregar Categoria</button>
+            <button onClick={onAddCategory}>Agregar Categoria</button>
             <ol>
                 {categories.map(category => {
                     return <li key={category}>{category}</li>
