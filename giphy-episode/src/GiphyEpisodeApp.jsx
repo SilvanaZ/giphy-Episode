@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
+import { AddCategory } from "./____components____/AddCategory";
+import { GifGrid } from "./____components____/GifGrid";
 
 export const GiphyEpisodeApp = () => {
 
-    const [ categories, setCategories ] = useState([ 'One Piece', 'Kimetsu no Yaiba' ]);
+    const [ categories, setCategories ] = useState([ 'One Piece' ]);
 
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;
@@ -15,24 +16,21 @@ export const GiphyEpisodeApp = () => {
 
     return (
         <>
-            {/* titulo */}
             <h1> GiphyEpisodeApp</h1>
-
-            {/* Input */}
             <AddCategory
                 //setCategories={setCategories}
                 onNewCategory={(value) => onAddCategory(value)}
             //currentCategories={categories}
             />
 
-            {/* Listado de Gif */}
             {/*<button onClick={onAddCategory}>Añadir</button>*/}
+            {
+                categories.map(category => (
+                    <GifGrid key={category}
+                        category={category} />
 
-            <ol>
-                {categories.map(category => {
-                    return <li key={category}>{category}</li>
-                })}
-            </ol>
+                ))
+            }
 
             {/* Gif Item */}
 
