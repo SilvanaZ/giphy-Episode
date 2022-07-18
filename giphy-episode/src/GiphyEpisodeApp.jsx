@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { AddCategory } from "./____components____/AddCategory";
-import { GifGrid } from "./____components____/GifGrid";
+import React, { useState } from 'react';
+import { AddCategory, GifGrid } from './____components____';
 
 export const GiphyEpisodeApp = () => {
 
@@ -26,15 +25,12 @@ export const GiphyEpisodeApp = () => {
             {/*<button onClick={onAddCategory}>Añadir</button>*/}
             {
                 categories.map(category => (
-                    <GifGrid key={category}
+                    <GifGrid
+                        key={category}
                         category={category} />
 
                 ))
             }
-
-            {/* Gif Item */}
-
-
         </>
     )
 }
