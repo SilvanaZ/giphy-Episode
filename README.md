@@ -1,3 +1,3 @@
-###GiphyEpisodeSearch
+# GiphyEpisodeSearch
 
-Este s mi repo del proyecto Giphy Episode Search, buscador de gifs :heart:
+Este es mi repo del proyecto Giphy Episode 🔍 , buscador de gifs ❤️
