@@ -3,7 +3,7 @@ import { AddCategory, GifGrid } from './____components____';
 
 export const GiphyEpisodeApp = () => {
 
-    const [ categories, setCategories ] = useState([ 'Episode' ]);
+    const [ categories, setCategories ] = useState([ 'Once Upon a Time' ]);
 
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;
