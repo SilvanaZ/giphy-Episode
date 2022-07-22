@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { GifItem } from '../____components____';
+import { GifItem } from '../____components____/GifItem';
 import { useFetchGifs } from '../___hooks___/useFetchGifs';
 
 

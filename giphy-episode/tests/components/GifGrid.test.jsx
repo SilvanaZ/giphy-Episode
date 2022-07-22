@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { GifGrid } from '../../src/components/GifGrid';
-import { useFetchGifs } from '../../src/hooks/useFetchGifs';
+import { GifGrid } from '../src/____components____/GifGrid.jsx';
+import { useFetchGifs } from '../src/___hooks___/useFetchGifs';
 
 jest.mock('../../src/hooks/useFetchGifs');
 
