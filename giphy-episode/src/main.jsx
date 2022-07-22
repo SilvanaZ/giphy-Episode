@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { GiphyEpisodeApp } from './GiphyEpisodeApp'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { GiphyEpisodeApp } from './GiphyEpisodeApp';
+
 import './estilos.css';
 
 
