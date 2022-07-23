@@ -5,5 +5,5 @@ describe('', () => {
     TextDecoderStream('', () => {
         render(<GiphyEpisodeApp />);
         screen.debug
-    })
-})
+    });
+});
