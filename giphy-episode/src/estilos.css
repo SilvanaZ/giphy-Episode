@@ -8,17 +8,19 @@
 
 body {
   padding: 60px;
+  display: flex;
 }
 
 input {
   background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(97, 32, 158);
+  border-radius: 25px;
+  box-shadow: 6px 6px 16px black, -6px -6px 16px;
   color: black;
-  font-size: 1.2rem;
+  font-size: medium;
   outline: none;
   padding: 10px 15px;
   width: 100%;
+  transition: all 0.25s ease-out;
 }
 
 h2 {
@@ -35,19 +37,19 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .card {
- width: 190px;
- height: 254px;
- background: rgb(214, 147, 147);
- box-shadow: rgba(0, 0, 0, 0.877) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
- margin: 6px;
- transition: all 300ms;
+  width: 190px;
+  height: 254px;
+  background: rgb(214, 147, 147);
+  box-shadow: rgba(0, 0, 0, 0.877) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 6px;
+  transition: all 300ms;
 }
-.card :hover{
- transform: scale(1.10);
+.card :hover {
+  transform: scale(1.1);
 }
 
 .card p {
