@@ -2,19 +2,51 @@
 
 * {
   font-family: Raleway;
-  color: purple;
-  background-color: gray;
 }
 
 body {
   padding: 60px;
   display: flex;
+  background-image: url("fond.jpg");
+  background-repeat: no-repeat;
+}
+.search-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px);
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cf97c1;
+}
+::placeholder {
+  color: #310f81;
+}
+.search-bar button img {
+  width: 25px;
+}
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(215, 163, 245, 0.4);
+  cursor: pointer;
 }
 
 input {
   background-color: white;
   border-radius: 25px;
-  box-shadow: 6px 6px 16px black, -6px -6px 16px;
+  box-shadow: 6px 6px 16px rgb(131, 65, 76), -6px -6px 16px;
   color: black;
   font-size: medium;
   outline: none;

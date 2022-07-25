@@ -18,13 +18,13 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form class="search-bar"onSubmit={onSubmit}>
             <input type="text"
                 placeholder="Buscar gifs..."
                 value={inputValue}
                 onChange={onInputChange}
             />
-
+            <button type="submit"><img src="/search.png"/></button>
         </form>
     )
 }
